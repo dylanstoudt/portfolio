@@ -40,7 +40,12 @@ nav ul li a {
     /* text-decoration: none; */
 }
 
+#banner{
+    display:block;
+}
+
 body article{
+    display:block;
     position: relative;
     height: 300px;
     width: 400px;
@@ -49,7 +54,7 @@ body article{
 }
 body article h1{
     position: absolute;
-    top: 130px;
-    right: 10px;
-    font-size: 30px;
+    top: 120px;
+    right: 20px;
+    font-size: 50px;
 }
