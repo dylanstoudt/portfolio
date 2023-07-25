@@ -20,7 +20,7 @@ header h1 {
     margin-left: 50px;
 }
 
-header nav {
+nav {
     position:relative;
     padding-top: 15px;
     margin-right: 50px;
@@ -29,12 +29,27 @@ header nav {
     font-size: 20px;
 }
 
-header nav ul li {
+nav ul li {
     display: inline-block;
     margin-left: 25px;
+    font-size: 24px;
 }
 
-a {
+nav ul li a {
     color: #ffffff;
     /* text-decoration: none; */
+}
+
+body article{
+    position: relative;
+    height: 300px;
+    width: 400px;
+    margin-top:25px;
+    border-right: solid white;
+}
+body article h1{
+    position: absolute;
+    top: 130px;
+    right: 10px;
+    font-size: 30px;
 }
