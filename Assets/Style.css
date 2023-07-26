@@ -1,32 +1,28 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
-body{
+body {
     background-color: #666699;
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
     background-color: #1f1f2e;
-    color:#ffffff;
-    padding:20px;
+    color: #ffffff;
+    padding: 20px;
 }
 
 header h1 {
-    display: inline-block;
-    font-size: 48px;
-    margin-left: 50px;
+    padding-left: 50px;
 }
 
-nav {
-    position:relative;
-    padding-top: 15px;
-    margin-right: 50px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+.navigation {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
 }
 
 nav ul li {
@@ -37,24 +33,69 @@ nav ul li {
 
 nav ul li a {
     color: #ffffff;
-    /* text-decoration: none; */
+    text-decoration: none;
 }
 
-#banner{
-    display:block;
+#banner {
+    display: block;
 }
 
-body article{
-    display:block;
-    position: relative;
-    height: 300px;
-    width: 400px;
-    margin-top:25px;
-    border-right: solid white;
+section {
+    display: flex;
+    justify-content: space-between;
+    min-height: 500px;
+    align-items: center;
 }
-body article h1{
-    position: absolute;
-    top: 120px;
-    right: 20px;
-    font-size: 50px;
+
+section h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 10px;
+    border-right: solid black;
+}
+
+section div {
+    flex: 0 0 75%;
+}
+
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects {
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+    flex-basis: 48%;
+    border: solid black 2px;
+    padding:5px;
+    background-image: linear-gradient();
+}
+
+.projects div {
+    bottom: 0;
+}
+
+.projects:first-child {
+    height: 400px;
+    flex-basis: 100%;
+}
+
+.work {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-me {
+    display: flex;
+    justify-content: space-around;
+    min-height: 200px;
+    align-items: center;
+    text-align: left;
+}
+
+.contact-me nav{
+    flex: 0 0 75%;
 }
